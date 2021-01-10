@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +7,67 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section>
-    <header>
-      <a href="#"  ><img src="logo.png" alt="logo" class="logo"></a>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Delivery</a></li>
-        <li><a href="">Contato</a></li>
+  <header>
+    <a href="#" ><img src="logo.png" alt="logo" class="logo"></a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="navigation" >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
-    </header>
+    
+  </header>
+  <section>
+    <div class="circle"></div>
     <div class="content">
       <div class="textBox">
         <h2>Venha Saborear  <br>Nossas <span>Delícias</span> </h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur , quis nostrud exercitation ullamco
-           laboris nisi ut aliquip ex ea commodo consequat. 
-           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
-        <a href="#">Nos conheça</a>
+        <p><span>  Dany Açaí e Sorvetes</span> serve seus clientes com sorvetes,<br> milk shakes e açaí. <br>São muitas opções de sabores e combinaçoes 
+        possíveis.<br> Venha conferir em nossa loja ou peça de casa. </p>
+        <a href="#">Faça Seu Pedido</a>
       </div>
       
         <div class="imgBox">
-          <img src="milk-dany.png" alt="milk" class="starbucks">
+          <img src="milk-dany.png" height="450px" alt="milk" class="products">
+          <p id="products" >Milk Shakes</p>
         </div>
+        
       
     </div>
-    <ul>
-      <li><img src="thumb_milk-dany.png" alt="miniatura milk shake"></li>
+    <ul class="thumb" >
+      <li><img src="thumb_milk-dany.png" onclick="imgSlider('milk-dany.png');changeCircleColor(' #FF8ED4');changeMilk()"></li>
+      <li><img src="thumb_sorvete.png" onclick="imgSlider('sorvete.png');changeCircleColor('#FFD760'); changeSorvete()"></li>
+      <li><img src="thumb_acai.png" height="90px" onclick="imgSlider('acai.png');changeCircleColor(' rgb(161, 103, 216)');changeAcai()"></li>
+      
     </ul>
+   
   </section>
   
+  <script>
+    function imgSlider(anything){
+      document.querySelector('.products').src=anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+    function changeMilk() {
+    document.getElementById("products").innerHTML = "Milk Shakes";
+}
+function changeSorvete() {
+    document.getElementById("products").innerHTML = "Sorvetes";
+}
+function changeAcai() {
+    document.getElementById("products").innerHTML = "Açaí";
+}
+function toggleMenu(){
+  var menuToggle = document.querySelector('.toggle');
+  var navigation = document.querySelector('.navigation')
+  menuToggle.classList.toggle('active')
+  navigation.classList.toggle('active')
+}
+  </script>
 </body>
 </html>
