@@ -250,11 +250,24 @@ display: flex;
   }
 
   .content .imgBox img{
-    max-width: 300px;
+    max-width: 260px;
+    height: 300px;
   }
+  
   .content .imgBox p{
-    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-top: 200px;
+    color: rgb(255, 251, 251);
+    font-size: 30px;
+    font-weight: bold;
+    
+    position: relative;
+    padding-right: 50px;
+    
   }
+
   .thumb li img{
     max-width: 50px;
   }
@@ -262,4 +275,8 @@ display: flex;
   .circle{
     clip-path: circle(400px at center bottom);
   }
+}
+
+@media (max-width:1234px){
+
 }
