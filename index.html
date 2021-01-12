@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dany Açaí e Sorvetes</title>
   <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
   <header>
-    <a href="#" ><img src="logo.png" alt="logo" class="logo"></a>
+    <a href="#" ><img src="images/logo.png" alt="logo" class="logo"></a>
     <div class="toggle" onclick="toggleMenu();"></div>
       <ul class="navigation" >
         <li><a href="#">Home</a></li>
@@ -29,45 +30,23 @@
       </div>
       
         <div class="imgBox">
-          <img src="milk-dany.png" height="450px" alt="milk" class="products">
+          <img src="images/milk-dany.png" height="450px" alt="milk" class="products">
           <p id="products" >Milk Shakes</p>
         </div>
         
       
     </div>
     <ul class="thumb" >
-      <li><img src="thumb_milk-dany.png" onclick="imgSlider('milk-dany.png');changeCircleColor(' #FF8ED4');changeMilk()"></li>
-      <li><img src="thumb_sorvete.png" onclick="imgSlider('sorvete.png');changeCircleColor('#FFD760'); changeSorvete()"></li>
-      <li><img src="thumb_acai.png" height="90px" onclick="imgSlider('acai.png');changeCircleColor(' rgb(161, 103, 216)');changeAcai()"></li>
+      <li><img src="images/thumb_milk-dany.png" onclick="imgSlider('images/milk-dany.png');changeCircleColor(' #FF8ED4');changeMilk()"></li>
+      <li><img src="images/thumb_sorvete.png" onclick="imgSlider('images/sorvete.png');changeCircleColor('#FFD760'); changeSorvete()"></li>
+      <li><img src="images/thumb_acai.png" height="90px" onclick="imgSlider('images/acai.png');changeCircleColor(' rgb(161, 103, 216)');changeAcai()"></li>
       
     </ul>
    
   </section>
-  
-  <script>
-    function imgSlider(anything){
-      document.querySelector('.products').src=anything;
-    }
-    function changeCircleColor(color){
-      const circle = document.querySelector('.circle');
-      circle.style.background = color;
-    }
 
-    function changeMilk() {
-    document.getElementById("products").innerHTML = "Milk Shakes";
-}
-function changeSorvete() {
-    document.getElementById("products").innerHTML = "Sorvetes";
-}
-function changeAcai() {
-    document.getElementById("products").innerHTML = "Açaí";
-}
-function toggleMenu(){
-  var menuToggle = document.querySelector('.toggle');
-  var navigation = document.querySelector('.navigation')
-  menuToggle.classList.toggle('active')
-  navigation.classList.toggle('active')
-}
-  </script>
+  <script src="js/index.js"></script>
+  
+ 
 </body>
 </html>
