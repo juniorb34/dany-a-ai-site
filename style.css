@@ -1,5 +1,5 @@
 @import url('https//fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kaushan+Script&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +32,7 @@ header .logo {
 header ul {
   position: relative;
   display: flex;
+  font-size: 20px;
 }
 
 header ul li {
@@ -41,10 +42,15 @@ header ul li {
 
 header ul li a {
   position: relative;
+
   display: inline-block;
   margin: 0 15px;
   color: #fff;
   text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #ff8ed4
 }
 
 .section-home {
@@ -69,11 +75,12 @@ header ul li a {
 .content .textBox {
   position: relative;
   max-width: 600px;
+  font-size: 20px;
 }
 
 .content .textBox h2 {
   color: #333;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.4em;
   font-weight: 500;
 }
@@ -145,10 +152,6 @@ header ul li a {
   transform: translateY(-15px);
 }
 
-.thumb li img {
-  max-width: 60px;
-}
-
 .circle {
   position: absolute;
   top: 0;
@@ -167,14 +170,18 @@ header ul li a {
   padding-bottom: 50px;
   text-align: center;
   margin: 0;
-  color: #111;
 }
 
 .heading h1 {
-  font-size: 50px;
+  font-size: 65px;
   padding-top: 90px;
   padding-bottom: 50px;
-  font-family: 'Helvetica Neue';
+  color: #70084ec4;
+  font-family: 'Kaushan Script', cursive;
+}
+.heading h3 {
+  color: #1b0312;
+  font-size: 25px;
 }
 .content-promo {
   display: flex;
@@ -196,6 +203,11 @@ header ul li a {
   justify-content: space-between;
 }
 
+/*=======================  delivery  ============================*/
+
+.delivery-content {
+  background: rgb(235, 227, 227);
+}
 .content-delivery {
   width: 100%;
   padding-top: 90px;
@@ -211,16 +223,34 @@ header ul li a {
   font-family: 'Helvetica Neue';
 }
 
-.delivery-app {
+section .delivery {
   width: 100%;
+  height: 500px;
+  justify-content: center;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+}
+.delivery a img {
+  padding: 20px 20px;
+  background: rgb(235, 227, 227);
+}
+.content-delivery-pedido {
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  margin: 0;
+  color: #111;
 }
 
-.delivery-app img {
-  max-width: 500px;
-  height: 300px;
+.content-delivery-pedido p {
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Kaushan Script', cursive;
+  color: #70084ec4;
 }
+
+/*======================= Responsive =======================*/
 
 @media (max-width: 900px) {
   header {
@@ -327,4 +357,9 @@ header ul li a {
 }
 
 @media (max-width: 1234px) {
+}
+
+/*========================teste======================*/
+
+.delivery {
 }

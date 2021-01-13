@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dany Açaí e Sorvetes</title>
   <link rel="stylesheet" href="style.css">
+  
  
 </head>
 
@@ -38,15 +39,15 @@
       
     </div>
     <ul class="thumb" >
-      <li><img src="images/thumb_milk-dany.png" onclick="imgSlider('images/milk-dany.png');changeCircleColor(' #FF8ED4');changeMilk()"></li>
-      <li><img src="images/thumb_sorvete.png" onclick="imgSlider('images/sorvete.png');changeCircleColor('#FFD760'); changeSorvete()"></li>
-      <li><img src="images/thumb_acai.png" height="90px" onclick="imgSlider('images/acai.png');changeCircleColor(' rgb(161, 103, 216)');changeAcai()"></li>
+      <li><img src="images/thumb_milk-dany.png" height="120px" width="120px" onclick="imgSlider('images/milk-dany.png');changeCircleColor(' #FF8ED4');changeMilk()"></li>
+      <li><img src="images/thumb_sorvete.png" height="120px" width="120px" onclick="imgSlider('images/sorvete.png');changeCircleColor('#FFD760'); changeSorvete()"></li>
+      <li><img src="images/thumb_acai.png" height="120px" width="120px" height="90px" onclick="imgSlider('images/acai.png');changeCircleColor(' rgb(161, 103, 216)');changeAcai()"></li>
       
     </ul>
    
   </section>
 
-  <section id="promo">
+  <section id="promo" class="promo">
    <div class="heading" >
      <h1>Confira nossas promoções</h1>
      <h3>Preços na loja (Venha conferir)</h3>
@@ -61,33 +62,33 @@
    </div>
    </section>
 
-   <section id="delivery">
-     <div class="content-delivery" >
-       <p>Fazemos entrega pelos melhores aplicativos delivery da cidade.</p>
-     </div>
-     
-        <div class="delivery-app" >
-        <a href="#">
-          <img src="images/ifood.png" height="300px"  alt="">
-        </a>
+   <section  id="delivery" class="delivery-content">
+    <div class="content-delivery" >
+      <p>Fazemos entrega pelos melhores aplicativos delivery da cidade.</p>
+    </div> 
+     <div class="delivery" >
+      <div class="delivery-apps">
+        
         <a href="#">
           <img src="images/uber.jpg" height="300px"   alt="">
         </a>
         <a href="#">
-          <img src="images/rappi.jpg" height="300px"  alt="">
+          <img src="images/ifood.png" height="300px"  alt="">
         </a>
-        <div><a href=""></a></div>
-        
+        <a href="#">
+          <img src="images/rappi.jpeg" height="300px"  alt="">
+        </a>
       </div>
-      <div class="content-delivery" >
-        <p>Clique e faça seu pedido</p>
-      </div>
+     </div> 
+     <div class="content-delivery-pedido" >
+      <p>Clique e faça seu pedido</p>
+    </div>
    </section>
   
     
     
     
-  </div>
+
 
   <script src="js/index.js"></script>
  </body>

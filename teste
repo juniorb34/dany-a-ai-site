@@ -1,0 +1,20 @@
+<div class="content-delivery" >
+       <p>Fazemos entrega pelos melhores aplicativos delivery da cidade.</p>
+     </div>
+     
+        <div class="delivery-app" >
+        <a href="#">
+          <img src="images/ifood.png" height="300px"  alt="">
+        </a>
+        <a href="#">
+          <img src="images/uber.jpg" height="300px"   alt="">
+        </a>
+        <a href="#">
+          <img src="images/rappi.jpg" height="300px"  alt="">
+        </a>
+        <div><a href=""></a></div>
+        
+      </div>
+      <div class="content-delivery" >
+        <p>Clique e faça seu pedido</p>
+      </div>
