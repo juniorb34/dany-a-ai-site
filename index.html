@@ -7,26 +7,27 @@
   <link rel="stylesheet" href="style.css">
  
 </head>
+
 <body>
   <header>
     <a href="#" ><img src="images/logo.png" alt="logo" class="logo"></a>
     <div class="toggle" onclick="toggleMenu();"></div>
       <ul class="navigation" >
         <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Delivery</a></li>
+        <li><a href="#promo">Promoções</a></li>
+        <li><a href="#delivery">Delivery</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
     
   </header>
-  <section>
+  <section class="section-home">
     <div class="circle"></div>
     <div class="content">
       <div class="textBox">
         <h2>Venha Saborear  <br>Nossas <span>Delícias</span> </h2>
         <p><span>  Dany Açaí e Sorvetes</span> serve seus clientes com sorvetes,<br> milk shakes e açaí. <br>São muitas opções de sabores e combinaçoes 
         possíveis.<br> Venha conferir em nossa loja ou peça de casa. </p>
-        <a href="#">Faça Seu Pedido</a>
+        <a href="#delivery">Faça Seu Pedido</a>
       </div>
       
         <div class="imgBox">
@@ -45,8 +46,49 @@
    
   </section>
 
-  <script src="js/index.js"></script>
+  <section id="promo">
+   <div class="heading" >
+     <h1>Confira nossas promoções</h1>
+     <h3>Preços na loja (Venha conferir)</h3>
+   </div>
+   <div class="content-promo">
+     <div class="promoBx" >
+       <img src="images/promo-sorvete-redes.jpg" alt="">
+     </div>
+     <div class="promoBx" >
+      <img src="images/promocao-acai-redes.jpg" alt="">
+    </div>
+   </div>
+   </section>
+
+   <section id="delivery">
+     <div class="content-delivery" >
+       <p>Fazemos entrega pelos melhores aplicativos delivery da cidade.</p>
+     </div>
+     
+        <div class="delivery-app" >
+        <a href="#">
+          <img src="images/ifood.png" height="300px"  alt="">
+        </a>
+        <a href="#">
+          <img src="images/uber.jpg" height="300px"   alt="">
+        </a>
+        <a href="#">
+          <img src="images/rappi.jpg" height="300px"  alt="">
+        </a>
+        <div><a href=""></a></div>
+        
+      </div>
+      <div class="content-delivery" >
+        <p>Clique e faça seu pedido</p>
+      </div>
+   </section>
   
- 
-</body>
+    
+    
+    
+  </div>
+
+  <script src="js/index.js"></script>
+ </body>
 </html>
