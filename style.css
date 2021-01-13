@@ -50,7 +50,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #ff8ed4
+  color: #ff8ed4;
 }
 
 .section-home {
@@ -164,9 +164,12 @@ header ul li a:hover {
 
 /*=======================  Promoções ============================*/
 
+#promo {
+  background-color: #f3edf0;
+}
 .heading {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 50px;
   text-align: center;
   margin: 0;
@@ -181,14 +184,13 @@ header ul li a:hover {
 }
 .heading h3 {
   color: #1b0312;
-  font-size: 25px;
+  font-size: 20px;
 }
 .content-promo {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-bottom: 100px;
 }
 
 .content-promo .promoBx {
@@ -197,60 +199,172 @@ header ul li a:hover {
 }
 
 .content-promo .promoBx img {
-  height: 600px;
-  width: 600px;
+  height: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
 
 /*=======================  delivery  ============================*/
 
-.delivery-content {
-  background: rgb(235, 227, 227);
-}
-.content-delivery {
-  width: 100%;
-  padding-top: 90px;
-  text-align: center;
-  margin: 0;
-  color: #111;
-}
+#delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100;
+  padding-bottom: 400px;
 
-.content-delivery p {
-  font-size: 50px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  font-family: 'Helvetica Neue';
+  padding-top: 100px;
 }
-
-section .delivery {
-  width: 100%;
-  height: 500px;
-  justify-content: center;
+#delivery div {
   display: flex;
   align-items: center;
-}
-.delivery a img {
-  padding: 20px 20px;
-  background: rgb(235, 227, 227);
-}
-.content-delivery-pedido {
+  justify-content: space-around;
   width: 100%;
-  padding-top: 10px;
-  text-align: center;
-  margin: 0;
-  color: #111;
 }
 
-.content-delivery-pedido p {
-  font-size: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+#delivery h1 {
+  padding: 60px;
+  padding-bottom: 100px;
+  font-size: 30px;
+}
+
+#delivery p {
+  padding: 60px;
+  padding-bottom: 100px;
+  font-size: 40px;
   font-family: 'Kaushan Script', cursive;
   color: #70084ec4;
 }
+#delivery div img {
+  display: flex;
+  flex-direction: column;
+}
 
-/*======================= Responsive =======================*/
+/*=================== Footer Contato ===========================*/
+#footer-contato {
+  color: white;
+}
+
+footer {
+  padding-top: 80px;
+  bottom: 0px;
+  width: 100%;
+  background: rgb(161, 156, 156);
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p {
+  text-align: justify;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover {
+  background: #f12020;
+}
+.center .content .fas {
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover {
+  background: #f12020;
+}
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone {
+  margin: 15px 15px;
+  padding-right: 90px;
+}
+
+.center .content .phone a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom center {
+  padding: 10px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span {
+  color: #656565;
+}
+.bottom center a {
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+  }
+}
+
+/*======================= Responsive  Header =======================*/
 
 @media (max-width: 900px) {
   header {
@@ -354,12 +468,136 @@ section .delivery {
   .circle {
     clip-path: circle(400px at center bottom);
   }
+
+  /*===================== Promoções Responsive =======================*/
+  .content-promo .promoBx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*============ Delivery Responsive =================*/
+
+  #delivery {
+    padding-top: 0;
+    height: 100%;
+  }
+  #delivery div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 20px 20px;
+  }
+  #delivery h1 {
+    font-size: 1.4em;
+    text-align: center;
+  }
 }
 
-@media (max-width: 1234px) {
+@media (max-width: 1150px) {
+  header {
+    padding: 20px;
+  }
+
+  header .logo {
+    max-width: 100px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(images/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 11;
+  }
+
+  .toggle.active {
+    position: fixed;
+    right: 20px;
+    background: url(images/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 10;
+  }
+
+  header ul li a {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: black;
+  }
+
+  section {
+    padding: 20px 20px 120px;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .content .textBox h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+
+  .content .textBox {
+    max-width: 100%;
+  }
+
+  .content .imgBox {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .content .imgBox img {
+    max-width: 260px;
+    height: 300px;
+  }
+
+  .content .imgBox p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    color: rgb(255, 251, 251);
+    font-size: 30px;
+    font-weight: bold;
+
+    position: relative;
+    padding-right: 50px;
+  }
+
+  .thumb li img {
+    max-width: 50px;
+  }
+
+  .circle {
+    clip-path: circle(400px at center bottom);
+  }
 }
 
-/*========================teste======================*/
-
-.delivery {
-}
+/*===================== Promoções Reponsive ================================*/
