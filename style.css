@@ -306,6 +306,11 @@ footer {
 .left .content .social a span:hover {
   background: #f12020;
 }
+
+.center .content a {
+  color: #fff;
+  text-decoration: none;
+}
 .center .content .fas {
   font-size: 1.4375rem;
   background: #1a1a1a;
@@ -350,6 +355,8 @@ footer {
 .bottom center a:hover {
   text-decoration: underline;
 }
+
+
 @media screen and (max-width: 1200px) {
   footer {
     position: relative;
@@ -475,6 +482,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .promo .heading h1 {
+    font-size: 30px;
   }
 
   /*============ Delivery Responsive =================*/
